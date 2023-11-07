@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-07T15:12:46 IST" name="Default suite" finished-at="2023-11-07T15:12:56 IST" duration-ms="9952">
+    <groups>
+    </groups>
+    <test started-at="2023-11-07T15:12:46 IST" name="Default test" finished-at="2023-11-07T15:12:56 IST" duration-ms="9952">
+      <class name="com.ame.Tc1_amezomProduct">
+        <test-method is-config="true" signature="browserLaunch()[pri:0, instance:com.ame.Tc1_amezomProduct@6c284af]" started-at="2023-11-07T15:12:46 IST" name="browserLaunch" finished-at="2023-11-07T15:12:51 IST" duration-ms="4848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="productSearch()[pri:0, instance:com.ame.Tc1_amezomProduct@6c284af]" started-at="2023-11-07T15:12:51 IST" name="productSearch" finished-at="2023-11-07T15:12:55 IST" duration-ms="4274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productSearch -->
+        <test-method signature="selectProduct()[pri:0, instance:com.ame.Tc1_amezomProduct@6c284af]" started-at="2023-11-07T15:12:55 IST" name="selectProduct" finished-at="2023-11-07T15:12:55 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProduct -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.ame.Tc1_amezomProduct@6c284af]" started-at="2023-11-07T15:12:55 IST" name="closeBrowser" finished-at="2023-11-07T15:12:56 IST" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.ame.Tc1_amezomProduct -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

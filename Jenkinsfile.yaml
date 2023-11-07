@@ -1,0 +1,20 @@
+pipeline:
+   agent:
+     any:
+   options:
+     - disableConcurrentBuilds()
+   tools:
+       maven: 'MAVEN_HOME'
+   stages: 
+      - stage: checkout
+        steps:
+          - git 'https://github.com/EnhopsAz/AmezonNew.git'
+      - stage: maven 
+        stages:
+          - stage: Build
+            steps:
+              script:
+                - bat "mvn clean compile"
+          - stage: Test
+            steps:
+                - bat "mvn test"

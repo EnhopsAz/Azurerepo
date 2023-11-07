@@ -1,0 +1,113 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.Ame</groupId>
+  <artifactId>Amezonp</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+   <properties>
+		<maven.complier.source>1.8</maven.complier.source>
+		<maven.complier.target>1.8</maven.complier.target>
+
+		<webdriver.version>5.5.3</webdriver.version>
+		<seleniumjava.version>4.12.1</seleniumjava.version>
+		
+		<cucumber-java.version>7.12.0</cucumber-java.version>
+		<cucumber-junit.version>7.12.0</cucumber-junit.version>
+		<TestNg.version>7.8.0</TestNg.version>
+		 
+		
+		<cucumber-reporting.version>5.7.5</cucumber-reporting.version>
+		
+</properties>
+
+	<dependencies>
+		
+
+	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>${webdriver.version}</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${seleniumjava.version}</version>
+		</dependency>
+
+
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber-java.version}</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber-junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>${cucumber-reporting.version}</version>
+		</dependency>
+
+
+		
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+    		<groupId>org.testng</groupId>
+    		<artifactId>testng</artifactId>
+    		<version>${TestNg.version}</version>
+    		<scope>test</scope>
+		</dependency>
+		
+		 
+		
+		<!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+       <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.23</version>
+       </dependency>
+
+		
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+
+				<groupId>org.apache.maven.plugins</groupId>
+
+				<artifactId>maven-surefire-plugin</artifactId>
+
+				<version>3.1.2</version>
+				<configuration>
+					<suiteXmlFiles>
+
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+
+					</suiteXmlFiles>
+			
+				</configuration>
+
+			</plugin>
+
+		</plugins>
+
+	</build>
+  
+  
+</project>
